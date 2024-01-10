@@ -6,7 +6,7 @@ export NIX_REMOTE = daemon
 PROJECT ?= ${HOME}/${LOGNAME}/p/scrape
 PWD     := $(shell pwd)
 
-BIN ?= baka
+BIN ?= scrape
 
 build: ## build (default)
 	cabal build --jobs='$$ncpus' $(CABARGS) 2>&1 \
